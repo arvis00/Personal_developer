@@ -3,45 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> <%= htmlWebpackPlugin.options.title %> </title>    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <title> Personal Developer </title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="style.9ed5bd5ce4fd0572a6af.css" rel="stylesheet"></head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <div class="navbar-brand">
-                <a class="name" id='logoName' href="#">ARVYDAS MICKUS</a>
-                <a class="logoBottom" id='logoBottom' href="#">Personal Developer</a>
+                <a class="name" id="logoName" href="#">ARVYDAS MICKUS</a>
+                <a class="logoBottom" id="logoBottom" href="#">Personal Developer</a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item forScroll">
-                        <a class="nav-link home active" id='homeBtn' href="#home">Home</a>
+                        <a class="nav-link home active" id="homeBtn" href="#home">Home</a>
                     </li>
                     <li class="nav-item forScroll">
                         <a class="nav-link" id="aboutBtn" href="#about">About</a>
                     </li>
                     <li class="nav-item forScroll">
-                        <a class="nav-link" id='servicesBtn' href="#services">Services</a>
+                        <a class="nav-link" id="servicesBtn" href="#services">Services</a>
                     </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li> -->
                     <li class="nav-item forScroll">
-                        <a class="nav-link" id='contactBtn' href="#contact">Contact</a>
+                        <a class="nav-link" id="contactBtn" href="#contact">Contact</a>
                     </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Members</a>
-                </li> -->
                     <li class="nav-item login">
                         <a class="nav-link" href="#">
                             <img src="./assets/images/login.png" alt="">
@@ -95,11 +87,10 @@
             </div>
         </div>
         <div class="services parallax">
-            <!-- <a name='services' id="services"></a> -->
 
             <div class="container services parallax text-left" id="services">
                 <hr>
-                <h1 class="display-4 secondary">SERVICES</b></h1>
+                <h1 class="display-4 secondary">SERVICES</h1>
                 <div class="row one justify-content-center">
                     <div class="col-6">
                         <div class="servicesLink">
@@ -116,7 +107,7 @@
                 </div>
                 <div class="row two">
                     <div class="col">
-                        <div class="card text-center ">
+                        <div class="card text-center">
                             <div class="card-body first growthCard">
                                 <h5 class="card-title">One On One <br> Coaching</h5>
                                 <p>I'm a tagline. Click here to add your own text and edit me.</p>
@@ -186,12 +177,12 @@
         </div>
 
         <div class="contact" id="contact">
-            <!-- <a name='contact' id="contact"></a> -->
             <div class="container contact">
-
+                <hr>
+                <h1 class="display-4 secondary">CONTACT</h1>
+                <div class="row-block">
                 <div class="text">
-                    <hr>
-                    <h1 class="display-4 secondary">CONTACT</h1>
+                    
                     <div class="address">
                         <p>500 Terry Francois Street</p>
                         <p>San Francisco, CA 94158</p>
@@ -234,6 +225,7 @@
 
                 </form>
             </div>
+            </div>
         </div>
     </div>
 
@@ -249,7 +241,7 @@
         </div>
         
     </button>
-    <div class="scroll-up hide" id='scrollUp'>
+    <div class="scroll-up hide" id="scrollUp">
         <img src="./assets/icons/up_arrow.svg" alt="">
     </div>
     <div class="chat-popup" id="myForm">
@@ -268,7 +260,7 @@
 
             </div>
             <div class="typeText">
-                <input class='typeText_' placeholder="Type your message..." name="msg">
+                <input class="typeText_" placeholder="Type your message..." name="msg">
             </div>
             <img class="sendChat" src="./assets/icons/send.svg" alt="">
             <img class="emoji" src="./assets/icons/emoji.svg" alt="">
@@ -277,16 +269,13 @@
 
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     
 
-</body>
+<script type="text/javascript" src="main.9ed5bd5ce4fd0572a6af.js"></script></body>
 
 </html>

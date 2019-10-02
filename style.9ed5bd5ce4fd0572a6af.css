@@ -58,8 +58,7 @@ body {
   font-family: 'avenirLight'; }
 
 .login img {
-  width: 23px;
-  padding-bottom: 5px; }
+  width: 23px; }
 
 .login span {
   padding-left: 15px; }
@@ -105,15 +104,18 @@ nav {
   transition: .3s; }
 
 .nav-item {
-  padding: 10px 0; }
+  padding: 15px 0; }
 
 .navbar-nav {
-  text-align: center; }
+  align-items: center; }
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
   font-size: 15px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center; }
 
 .navbar-light .navbar-toggler {
   border: none;
@@ -327,13 +329,14 @@ form .btn-primary {
 .contact {
   background-color: #71b9be;
   height: auto;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
   display: flex;
   justify-content: space-between; }
 
 .contact form {
   width: 440px;
-  margin-top: 150px; }
+  margin-top: 150px;
+  margin-left: 20px; }
 
 .form-control {
   background-color: #71b9be;
@@ -345,9 +348,8 @@ form .btn-primary {
   height: 125px; }
 
 .text {
-  margin-top: 107px; }
+  margin-top: 150px; }
 
-.text .address,
 .text .phone {
   margin: 20px 0; }
 
@@ -367,14 +369,18 @@ form .btn-primary {
   border: none; }
 
 .container.contact {
-  padding-left: 49px; }
+  display: block; }
 
-.container.contact .text hr {
+.container.contact hr {
   width: 40px;
   height: 2px;
   color: black;
   background-color: black;
-  float: left; }
+  position: relative;
+  top: 80px;
+  left: 34px;
+  float: left;
+  border: none; }
 
 .container.services hr {
   width: 40px;
@@ -392,9 +398,19 @@ form .btn-primary {
   margin-top: 40px;
   font-family: 'avenirHeavy'; }
 
-.text .display-4.secondary {
-  font-size: 25px;
-  margin-bottom: 0; }
+.container.contact .display-4.secondary {
+  display: inline-block;
+  position: relative;
+  top: 90px;
+  left: -45px;
+  font-size: 42px;
+  padding-left: 34px; }
+
+.row-block {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto; }
 
 .ambitionsCard {
   display: none; }
@@ -555,8 +571,9 @@ form .btn-primary {
   outline: none; }
 
 .navbar-collapse.collapse ul li {
-  padding: 10px 0;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  align-items: center; }
 
 .navbar-collapse {
   transition: 0.5s ease; }
@@ -606,8 +623,8 @@ form .btn-primary {
               filter: invert(1);
       width: 30px;
       height: 30px; }
-  .container.services .row.two {
-    flex-direction: column; } }
+  .container.services .row.two .col {
+    min-width: 100%; } }
 
 @media (min-width: 576px) {
   .container {
@@ -660,20 +677,23 @@ form .btn-primary {
     margin-top: 40px; }
   .container.services .row.two .card {
     margin-bottom: 30px; }
+  .contact {
+    padding-bottom: 90px; }
   .container.contact {
     padding-top: 0; }
   .container.contact .text {
-    margin-top: 37px; }
+    margin-top: 0; }
   .container.contact form {
     margin-top: 37px; }
   .container.contact .text hr {
     margin: 0; }
-  .contact {
-    flex-direction: column;
-    height: 854px;
-    justify-content: flex-start; }
   .contact form {
-    width: 100%; } }
+    width: 100%;
+    margin-left: 0; }
+  .row-block {
+    margin-top: 134px;
+    flex-direction: column;
+    justify-content: flex-start; } }
 
 .hide {
   display: none !important; }
