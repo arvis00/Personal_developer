@@ -155,8 +155,8 @@ $("#contactBtn").click(function (e) {
 });
 
 function mediaQuerryListener(x) {
-    if (x.matches) {
-        console.log("max width function")
+    if (window.matchMedia("(max-width: 992px)").matches) {
+        
 
         $(window).scroll(function () {
             if (x.matches) {
@@ -172,12 +172,12 @@ function mediaQuerryListener(x) {
             }
         });
 
-        $(document).scroll(function () {
+        $(window).scroll(function () {
             let y = $(this).scrollTop();
             const homeElement = document.getElementById('home');
 
-            $('#scrollUp').removeClass('hide');
-            $('#scrollUp').addClass('show-flex');
+            // $('#scrollUp').removeClass('hide');
+            // $('#scrollUp').addClass('show-flex');
 
             if (y < homeElement.offsetHeight) {
                 $('#scrollUp').removeClass('show-flex');
